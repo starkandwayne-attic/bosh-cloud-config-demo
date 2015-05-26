@@ -1,0 +1,11 @@
+name: (( merge ))
+
+director_uuid: (( merge ))
+
+releases: (( merge ))
+
+jobs: (( merge ))
+
+properties: (( merge ))
+
+update: (( merge ))

@@ -1,0 +1,23 @@
+---
+name: redis-warden
+director_uuid: current
+
+releases:
+- name: redis
+  version: latest
+  git: https://github.com/cloudfoundry-community/redis-boshrelease.git
+      
+stemcells:
+- name: bosh-warden-boshlite-ubuntu-trusty-go_agent
+  version: 389
+
+templates:
+  - cloud-config-deployment.yml
+  - redis/deployment.yml
+  - redis/jobs.yml
+  - redis/infrastructure-warden.yml
+  - redis/stub.yml
+
+meta: {}
+
+    
